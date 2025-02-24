@@ -1,22 +1,17 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using TICapacitacion.DemoID.Biblioteca;
 
-var builder = Host.CreateApplicationBuilder();
-builder.Services.AddSingleton<IMessageWriter, MessageWriter>();
-builder.Services.AddSingleton<Worker>();
+HostApplicationBuilder Builder = Host.CreateApplicationBuilder();
 
-using IHost AppHost = builder.Build();
-var cts = new CancellationTokenSource();
-var ct = cts.Token;
+Builder.Services.AddHostedService<Worker>();
 
-var worker = AppHost.Services.GetRequiredService<Worker>();
-_ = worker.ExecuteAsync(cts.Token);
+//Builder.Services.AddLogging(config => { 
+//    config.ClearProviders();
+//    config.AddDebug();
+//});
 
-Console.WriteLine("Press <enter> to cancel worker...");
-Console.ReadLine();
-cts.Cancel();
+using IHost AppHost = Builder.Build();
 
-Console.ReadLine();
-
-//AppHost.Run();
+AppHost.Run();
