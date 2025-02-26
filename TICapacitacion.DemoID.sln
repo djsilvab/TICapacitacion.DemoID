@@ -9,6 +9,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TICapacitacion.DemoID.Conso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TICapacitacion.DemoID.WinFormsApp", "TICapacitacion.DemoID.WinFormsApp\TICapacitacion.DemoID.WinFormsApp.csproj", "{F3C008DA-EDBB-48E8-B310-E80B44A3D52C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sesion_1234", "Sesion_1234", "{211837A4-202A-4527-9E82-3DF12DFBB1A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sesion_4567", "Sesion_4567", "{F2C2473F-5260-46CA-8FBA-07B01892E124}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TICapacitacion.DemoID.BibliotecaS4", "TICapacitacion.DemoID.BibliotecaS4\TICapacitacion.DemoID.BibliotecaS4.csproj", "{81667B73-0786-455E-AC5E-F0C51B81981C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TICapacitacion.DemoID.ConsolaAppS4", "TICapacitacion.DemoID.ConsolaAppS4\TICapacitacion.DemoID.ConsolaAppS4.csproj", "{CDF1C951-EF94-422B-9C18-E1AB46694CE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +35,23 @@ Global
 		{F3C008DA-EDBB-48E8-B310-E80B44A3D52C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3C008DA-EDBB-48E8-B310-E80B44A3D52C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3C008DA-EDBB-48E8-B310-E80B44A3D52C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81667B73-0786-455E-AC5E-F0C51B81981C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81667B73-0786-455E-AC5E-F0C51B81981C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81667B73-0786-455E-AC5E-F0C51B81981C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81667B73-0786-455E-AC5E-F0C51B81981C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDF1C951-EF94-422B-9C18-E1AB46694CE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDF1C951-EF94-422B-9C18-E1AB46694CE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDF1C951-EF94-422B-9C18-E1AB46694CE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDF1C951-EF94-422B-9C18-E1AB46694CE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1D443B6C-2CFA-4A11-AB95-DF0F8EA92640} = {211837A4-202A-4527-9E82-3DF12DFBB1A9}
+		{AA5614B3-1C69-405A-88DC-F691497DA9F4} = {211837A4-202A-4527-9E82-3DF12DFBB1A9}
+		{F3C008DA-EDBB-48E8-B310-E80B44A3D52C} = {211837A4-202A-4527-9E82-3DF12DFBB1A9}
+		{81667B73-0786-455E-AC5E-F0C51B81981C} = {F2C2473F-5260-46CA-8FBA-07B01892E124}
+		{CDF1C951-EF94-422B-9C18-E1AB46694CE9} = {F2C2473F-5260-46CA-8FBA-07B01892E124}
 	EndGlobalSection
 EndGlobal
