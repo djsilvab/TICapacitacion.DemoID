@@ -3,7 +3,7 @@ using Microsoft.Extensions.Options;
 
 namespace TICapacitacion.DemoID.BibliotecaS4;
 
-public class ExampleService
+internal class ExampleService : IExampleService
 {
     public ExampleService()
     {
