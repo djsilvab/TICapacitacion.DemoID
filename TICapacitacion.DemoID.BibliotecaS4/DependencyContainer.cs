@@ -5,7 +5,7 @@ public static class DependencyContainer
 {
     public static IServiceCollection AddLibraryServices(this IServiceCollection services)
     {
-        services.AddSingleton<IExampleService,ExampleService>();
+        services.AddSingleton<IExampleService, ExampleService>();
         services.AddOptions<ExampleOptions>();
 
         return services;
