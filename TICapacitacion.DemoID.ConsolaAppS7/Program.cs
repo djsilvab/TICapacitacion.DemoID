@@ -4,8 +4,19 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using TICapacitacion.DemoID.BibliotecaS7;
 
-RunWithoutApplicationHost();
+//RunWithoutApplicationHost();
 //RunWithApplicationHost();
+RunCreateApplicationBuilderExample();
+
+void RunCreateApplicationBuilderExample()
+{
+    Console.WriteLine("With Application Builder Example");
+    var Builder = Host.CreateApplicationBuilder();
+    Builder.Services.AddSingleton<MService>();
+
+    using IHost AppHost = Builder.Build();
+    MHelperService.DoSomeWork(AppHost.Services);
+}
 
 void RunWithApplicationHost()
 {
