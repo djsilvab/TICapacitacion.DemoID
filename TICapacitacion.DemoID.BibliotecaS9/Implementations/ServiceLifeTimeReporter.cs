@@ -22,6 +22,7 @@ public class ServiceLifeTimeReporter(
 
     void LogServiceInfo<T>(T service, string message)
         where T : IReportServiceLifeTime
-        => logger.LogInformation("\t {type}: {id}\n\t ({message})", typeof(T).Name, service.Id, message);
+        => logger.LogInformation("{type}: {id}\n\t ({message})", 
+                                typeof(T).Name, service.Id, message);
 
 }
