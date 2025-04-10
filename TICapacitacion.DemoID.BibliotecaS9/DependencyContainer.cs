@@ -5,7 +5,7 @@ using TICapacitacion.DemoID.BibliotecaS9.Interfaces;
 namespace TICapacitacion.DemoID.BibliotecaS9;
 public static class DependencyContainer
 {
-    public static IServiceCollection AddMLibraryService(this IServiceCollection services)
+    public static IServiceCollection AddMLibraryServices(this IServiceCollection services)
     {
         services.AddTransient<IExampleTransientService, ExampleTransientService>();
         services.AddScoped<IExampleScopedService, ExampleScopedService>();
